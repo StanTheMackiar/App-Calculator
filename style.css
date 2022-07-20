@@ -1,0 +1,160 @@
+body {
+    margin: 5rem 1rem;
+    background: rgb(140,245,250);
+    background: linear-gradient(143deg, rgba(140,245,250,1) 0%, rgba(71,195,198,1) 27%, rgba(74,194,198,1) 29%, rgba(122,184,194,1) 61%, rgba(71,135,203,1) 100%);
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1 {
+    color: rgb(18, 73, 117);
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgba(174, 223, 243, 0.5);
+    width: 20rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 10px rgb(67, 73, 124);
+}
+  #calculadora {
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 10px rgb(67, 73, 124);
+    background-color: rgb(93, 187, 224);
+    margin: 2rem auto 5rem auto;
+    padding: 1rem;
+    max-width: 40vh;
+  }
+  
+  #botones {
+    display: grid;
+    grid-template-areas:
+    "CE parent1 parent2 DEL"
+    "siete ocho nueve X"
+    "cuatro cinco seis resta"
+    "uno dos tres suma"
+    "coma cero division igual";
+    /* gap: 0.5rem; */
+  
+  }
+  #resultadoArea {
+    margin: 0.5rem 0.5rem;
+    text-align: right;
+    font-size: 30px;
+  }
+  #resultadoFinal {
+    font-size: 40px;
+    text-align: right;
+    font-weight: bold;
+    margin: 0.5rem 0.5rem;
+  }
+  .resultado {
+    color: rgb(32, 69, 99);;
+  }
+  .resultado:hover {
+    color: azure;
+    font-weight: bold;
+  }
+  .buttons {
+    border-radius: 10%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 30px;
+    margin: 0.2rem;
+    color: rgb(32, 69, 99);
+    box-shadow: 1px 1px 2px rgb(33, 115, 182);
+    border: outset steelblue 0.1rem;
+    background-color: lightskyblue;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;  
+    -khtml-user-select: none;    
+    -moz-user-select: none;     
+    -ms-user-select: none;   
+    user-select: none;   
+  }
+  .buttons:hover {
+    cursor: pointer;
+    color: azure;
+    transition: all 0.3s ease;
+    background-color: steelblue;
+  }
+  .buttons:active {
+    border: inset steelblue 0.1rem;
+  }
+  #button_0 {
+    grid-area: cero;
+  }
+  #button_coma {
+    grid-area: coma;
+  }
+  #button_igual {
+    grid-area: igual;
+  }
+  #button_1 {
+    grid-area: uno;
+  }
+  #button_2 {
+    grid-area: dos;
+  }
+  #button_3 {
+    grid-area: tres;
+  }
+  #button_suma {
+    grid-area: suma;
+  }
+  #button_4 {
+    grid-area: cuatro;
+  }
+  #button_5 {
+    grid-area: cinco;
+  }
+  #button_6 {
+    grid-area: seis;
+  }
+  #button_resta {
+    grid-area: resta;
+  }
+  #button_7 {
+    grid-area: siete;
+  }
+  #button_8 {
+    grid-area: ocho;
+  }
+  #button_9 {
+    grid-area: nueve;
+  }
+  #button_X {
+    grid-area: X;
+  }
+  #button_CE {
+    grid-area: CE;
+  }
+  #button_DEL {
+    grid-area: DEL;
+  }
+  #button_division {
+    grid-area: division;
+  }
+  #button_parentesis1 {
+    grid-area: parent1;
+  }
+  #button_parentesis2 {
+    grid-area: parent2;
+  }
+  
+  #outputMorse {
+    font-weight: bold;
+  }
+  #traductorMorse {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0.5rem;
+    margin: 0 auto;
+  }
+  .backgroundColor {
+    background-color: steelblue;
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.2rem;
+  }
